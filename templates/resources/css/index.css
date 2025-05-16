@@ -1,0 +1,182 @@
+body {
+    background-color: black; 
+    color: white
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    display:inline;
+    font-size: 60px;
+    padding-top: 0;
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    padding: 0px 8px;
+    font-size: 24px;
+}
+
+.navbar li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+
+.navbar li a:hover {
+    color: teal; /* Change color when hovered */
+  }
+
+.activeNav {
+    color: teal;
+}
+
+header a {
+    margin-left: auto;
+}
+
+h2 {
+    color: grey;
+    font-size: 32px;
+    margin-top: 9px;
+    margin-bottom: 5px;
+}
+
+section {
+    border: solid teal;
+    border-radius: 25px;
+    padding: 0px 20px 20px 20px;
+}
+
+.hlink {
+    border: solid white;
+    border-radius: 80px;
+    display: inline-block; 
+    width: 75px; 
+    height: 75px; 
+    padding:0; 
+    overflow: hidden; 
+    background-color: white;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.hlink:hover {
+    border: solid teal;
+}
+
+.menulink {
+    border: solid white;
+    border-radius: 80px;
+    display: inline-block; 
+    width: 80px; 
+    height: 80px; 
+    padding:0; 
+    overflow: hidden; 
+    background-color: white;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.menulink:hover {
+    border: solid teal;
+}
+
+.qlink {
+    border: solid white;
+    border-radius: 25px;
+    display:inline-block; 
+    width: 120px; 
+    height: 120px; 
+    padding:0; 
+    overflow: hidden; 
+    background-color: white;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 5px;
+}
+
+.qlink:hover {
+    border: solid teal;
+}
+
+.link_section {
+    margin-top: 5px; 
+    margin-bottom: 5px;
+}
+
+.droplink {
+    color: white; 
+    padding: 10px 15px; 
+    text-decoration: none; 
+    display: block;
+}
+
+#dropdown {
+    padding-bottom: 0; 
+}
+
+#dropdown ul,
+#dropdown2 ul {
+    display: none; /* Hide the menu by default */
+    position: absolute;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 0;
+    list-style: none;
+    margin:0;
+}
+
+/* Show the dropdown when hovering */
+#dropdown:hover ul,
+#dropdown2:hover ul {
+    display: block;
+}
+
+
+#dropdown:hover .dropbtn {
+    border: 2px solid teal;
+}
+
+#dropdown2 {
+    padding-bottom: 10px; 
+}
+
+#dropdown2:hover .dropbtn2 {
+    border: 2px solid teal;
+}
+
+#dropdown ul li a:hover {
+    color: teal; /* Ensures hover effect only applies to links in #dropdown */
+}
+
+#dropdown2 ul li a:hover {
+    color: teal; /* Ensures hover effect only applies to links in #dropdown */
+}
+
